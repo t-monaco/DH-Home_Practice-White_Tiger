@@ -1,0 +1,256 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+ul{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.nav-color{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.saveUs{
+  color: rgb(49, 219, 158) !important;
+  font-weight: 700;
+}
+.nav-li{
+  position: relative;
+}
+.nav-a::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: rgb(49, 219, 158);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.nav-a:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.donate{
+  justify-content: flex-end;
+}
+.gallery-size1{
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/tigre-bengala01.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.gallery-size2{
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/tigre-bengala02.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.gallery-size3{
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/tigre-bengala04.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.section-1{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+}
+.div-titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 10vh;
+}
+.titulo-wt{
+  color: rgb(49, 219, 158);
+  font-size: 4rem;
+  font-family: Poppins;
+  font-weight: 500;
+}
+.section-1-row{
+  max-width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+.section-1-p{
+  color: rgb(184, 184, 184);
+  height: 90vh;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding: 0 8%;
+}
+.section-2{
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/tigre-bengala07.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-3{
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.section-3-30{
+  max-width: 30%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(128, 199, 50); */
+}
+.p-section-3-30{
+  max-width: 60%;
+  text-align: justify;
+}
+p b{
+  color: rgb(49, 219, 158);
+  font-weight: 700;
+}
+}
+.section-3-70{
+  max-width: 70%;
+  min-height: 100vh;
+}
+.img-section-3-70{
+  max-width: 100%;
+  min-height: 100vh;
+  background-image: url("../img/tigre-bengala05.jpg");
+  background-size: cover;
+  z-index: 4;
+}
+.span{
+  position: relative;
+  z-index: 2;
+}
+.section-4{
+  max-width: 100%;
+  min-height: 50vh;
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+}
+.social{
+  color: rgb(32, 36, 40);
+}
+.social a:hover{
+  text-decoration: none;
+}
+.social i{
+  text-decoration: none;
+  color: rgb(32, 36, 40);
+}
+.social i:hover{
+  transform: scale(1.5);
+  transition: .3s;
+}
+.footer-text{
+  width: 100%;
+  height: 35vh;
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+}
+.footer-text h4{
+  text-transform: uppercase;
+}
+.footer-row{
+  max-width: 100%;
+  display: flex;
+}
+.map-col{
+  display: flex;
+}
+.gmail{
+  line-height: 18px;
+}
+.map{
+  width: 120%;
+}
+
+
+/* FOMRULARIO DE DONATE */
+
+
+
+body{
+  background-image: url("../img/tigre-bengala08.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 100vh;
+  margin: 0;
+}
+.text-form{
+  width: 55%;
+}
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin-top: 2rem;
+  max-width: 100%;
+  margin-left: 5%;
+  margin-top: 10%;
+  /* margin-right: auto; */
+  padding: 1em;
+}
+form input {
+  margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #9c9c9c;
+  border-radius: 10px;
+}
+form button {
+  background: lightgrey;
+  padding: 0.7em;
+  border: 0;
+  border-radius: 10px;
+}
+form button:hover {
+  background: rgb(49, 219, 158);
+}
+
+label {
+  text-align: left;
+  display: block;
+  padding: 0.5em 1.5em 0.5em 0;
+}
+
+input {
+  width: 100%;
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid rgb(49, 219, 158);
+}
