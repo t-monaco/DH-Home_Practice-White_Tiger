@@ -41,9 +41,6 @@ a{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.donate{
-  justify-content: flex-end;
-}
 .gallery-size1{
   max-width: 100%;
   height: 100vh;
