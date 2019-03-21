@@ -119,7 +119,6 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: rgb(128, 199, 50); */
 }
 .p-section-3-30{
   max-width: 60%;
@@ -128,7 +127,6 @@ a{
 p b{
   color: rgb(49, 219, 158);
   font-weight: 700;
-}
 }
 .section-3-70{
   max-width: 70%;
@@ -143,7 +141,8 @@ p b{
 }
 .span{
   position: relative;
-  z-index: 2;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0);
 }
 .section-4{
   max-width: 100%;
