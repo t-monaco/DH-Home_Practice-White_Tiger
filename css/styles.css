@@ -219,14 +219,6 @@ p b{
 
 
 
-body{
-  background-image: url("../img/tigre-bengala08.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-  height: 100vh;
-  margin: 0;
-}
 .text-form{
   width: 55%;
 }
@@ -293,12 +285,43 @@ input:focus {
     justify-content: space-around;
     flex-direction: column;
   }
+  .donate{
+    /* background-color: rgb(244, 235, 224); */
+    background: repeating-linear-gradient(
+    -55deg,
+    #222,
+    #222 10px,
+    #333 10px,
+    #333 20px
+);
+  }
+  .text-form{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: auto;
+  }
 }
 
 
 
 /* MEDIUM */
 @media (min-width: 768px) {
+  .donate{
+    background: 0;
+    background-image: url("../img/tigre-bengala08.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 95vh;
+    margin: 0;
+  }
 }
 
 
@@ -321,5 +344,28 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .donate{
+    background: 0;
+    background-image: url("../img/tigre-bengala08.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 100vh;
+    margin: 0;
+  }
+  .text-form{
+    width: 55%;
+  }
+  form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-top: 10%;
+    /* margin-right: auto; */
+    padding: 1em;
   }
 }
